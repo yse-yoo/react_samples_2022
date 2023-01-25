@@ -34,18 +34,17 @@
             </tr>
           </thead>
           <tbody>
-            <tr>
-              <td>xx</td>
-              <td>xx</td>
-              <td>xx</td>
-            </tr>
+            {
+              users.map((user) =>
+                <tr>
+                  <td>xx</td>
+                  <td>xx</td>
+                  <td>xx</td>
+                </tr>
+              )
+            }
           </tbody>
         </table>
-        {
-          users.map((user) => 
-              <p>{user.id}</p>
-          )
-        }
       </div>
     )
 
