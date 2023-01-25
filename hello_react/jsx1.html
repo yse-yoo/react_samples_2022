@@ -19,11 +19,14 @@
     var dom = document.getElementById('message')
     var title = "JSX"
     var message = "このHTMLはReactで作成しています"
+    var href = "https://ja.reactjs.org"
+    var label = "React公式ページ"
 
     var element = (
       <div>
         <h2>{title}</h2>
         <p>{message}</p>
+        <a href={href}>{label}</a>
       </div>
     )
 
