@@ -15,7 +15,10 @@
   <div id="message">Loading...</div>
 
   <script>
-    
+    var dom = document.getElementById('message')
+    var element = React.createElement('p', { className: 'message' }, 'こんにちは！')
+
+    ReactDOM.render(element, dom)
   </script>
 </body>
 
