@@ -9,7 +9,7 @@ function App() {
         <h2>React App</h2>
         <p>こんにちは</p>
 
-        <Message />
+        <Message message="親コンポーネントからデータを受け渡し" />
     </div>
   );
 }
