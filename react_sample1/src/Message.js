@@ -1,9 +1,17 @@
 import React, { Component } from 'react'
 
 export default class Message extends Component {
-  render() {
-    return (
-      <div>Messageコンポーネントを読み込みました</div>
-    )
-  }
+
+    message = 'デフォルト';
+
+    constructor(props) {
+        super(props);
+        if (props.message) this.message = props.message;
+    }
+
+    render() {
+        return (
+            <div>{this.message}</div>
+        )
+    }
 }
