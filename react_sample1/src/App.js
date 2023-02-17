@@ -13,6 +13,8 @@ function App() {
         { id: 1, name: 'Alice', email: 'alice@test.com', password: '1111' },
         { id: 2, name: 'Bob', email: 'bob@test.com', password: '1111' },
         { id: 3, name: 'Chris', email: 'chris@test.com', password: '1111' },
+        { id: 4, name: 'Davis', email: 'davis@test.com', password: '1111' },
+        { id: 5, name: 'Eric', email: 'Eric@test.com', password: '1111' },
     ];
 
     const [users, setUsers] = useState(defaultUsers)
