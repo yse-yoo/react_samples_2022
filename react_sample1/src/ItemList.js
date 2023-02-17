@@ -1,16 +1,26 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 function ItemList(props) {
 
-    var users = props.users;
+    const [users, setUsers] = useState(props.users)
+    // var users = props.users;
     console.log(users)
+
+    function onDeleteUser(index) {
+        console.log('delete!')
+        users[index] = null
+        setUsers(users)
+    }
 
     return (
         <div>
             <h2>ユーザ一覧</h2>
             {users.map((user, index) => {
                 return (
-                    <div>{user.name}</div>
+                    <div key={index}>
+                        {user.name}
+                        <button onClick={() => onDeleteUser(index)}>削除</button>
+                    </div>
                 )
             })}
         </div>
