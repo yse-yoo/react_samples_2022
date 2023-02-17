@@ -14,7 +14,7 @@ function App() {
     ];
 
     return (
-        <div classname="app">
+        <div className="app">
             <h2>React App</h2>
             <p>こんにちは</p>
 
