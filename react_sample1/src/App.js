@@ -2,8 +2,8 @@ import './App.css';
 import './Message';
 import Message from './Message';
 import ItemList from './ItemList';
+import Example from './Example';
 import React, {useState} from 'react';
-
 
 var message = "親コンポーネントからデータを受け渡し";
 
@@ -25,6 +25,8 @@ function App() {
             <Message message={message} />
 
             <ItemList users={users} />
+
+            <Example />
         </div>
     );
 }

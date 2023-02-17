@@ -3,7 +3,6 @@ import React, { useState } from 'react'
 function ItemList(props) {
 
     const [users, setUsers] = useState(props.users)
-    // var users = props.users;
     console.log(users)
 
     function onDeleteUser(index) {
