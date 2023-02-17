@@ -2,11 +2,17 @@ import React from 'react'
 
 function ItemList(props) {
 
-    console.log(props)
+    var users = props.users;
+    console.log(users)
 
     return (
         <div>
-            <h2>商品一覧</h2>
+            <h2>ユーザ一覧</h2>
+            {users.map((user, index) => {
+                return (
+                    <div>{user.name}</div>
+                )
+            })}
         </div>
     )
 }
